@@ -1,0 +1,85 @@
+{
+    "videoTitle": "Orbe-Pibot: Le Voyageur Multidimensionnel",
+    "chapters": [
+      {
+        "chapterTitle": "Le Départ",
+        "duration": 13,
+        "keywords": ["Orbe", "Cartographie", "Univers Multidimensionnel", "Mystère"],
+        "events": [
+          {
+            "description": "Présentation d'Orbe et de son but de cartographier l'univers multidimensionnel"
+          },
+          {
+            "description": "Introduction de la tension liée aux dimensions inaccessibles ou dangereuses"
+          },
+          {
+            "description": "Départ d'Orbe sous le sourire d'un observateur mystérieux"
+          }
+        ]
+      },
+      {
+        "chapterTitle": "Le Contrat",
+        "duration": 13,
+        "keywords": ["Personnage Mystérieux", "Contrat", "Échange"],
+        "events": [
+          {
+            "description": "Introduction du personnage mystérieux, ses motivations et pouvoirs"
+          },
+          {
+              "description": "Dilemme: Le contrat profite-t-il à Orbe ou l'expose-t-il à des risques ?"
+        },
+        {
+              "description": "Révélation du type de contrat, échange de cartes contre des informations ou un service"
+          }
+        ]
+      },
+      {
+        "chapterTitle": "La Destination Choisie",
+        "duration": 13,
+        "keywords": ["Catalogue", "Atlas de Dimensions", "Risques", "Récompenses"],
+        "events": [
+          {
+            "description": "Consultation d'Orbe dans le catalogue/atlas de dimensions"
+          },
+          {
+            "description": "Analyse d'Orbe des risques et récompenses de chaque dimension"
+          },
+          {
+            "description": "Inspiration d'Orbe par le personnage mystérieux ou son intuition"
+          }
+        ]
+      },
+      {
+        "chapterTitle": "L'Exploration",
+        "duration": 13,
+        "keywords": ["Nouvelle Dimension", "Cartographie", "Technologie", "Interactions", "Danger"],
+        "events": [
+          {
+            "description": "Description détaillée de la nouvelle dimension et ses caractéristiques uniques"
+          },
+          {
+            "description": "Utilisation par Orbe de ses capacités pour cartographier la dimension"
+        },
+        {
+        "description": "Choc: Orbe découvre un danger inattendu ou une force mystérieuse perturbant sa mission"
+        }
+        ]
+        },
+        {
+        "chapterTitle": "La Mise à Jour et le Nouveau Départ",
+        "duration": 13,
+        "keywords": ["Codex", "Consequences", "Nouveau Contrat", "Dimension Dangereuse"],
+        "events": [
+        {
+        "description": "Ajout des informations acquises au codex, enrichissant la compréhension de l'univers multidimensionnel"
+        },
+        {
+        "description": "Conséquences du danger sur Orbe et son éventuelle modification par l'expérience"
+        },
+        {
+        "description": "Préparation du prochain chapitre: Nouveau contrat proposé ou exploration d'une dimension plus dangereuse"
+        }
+        ]
+        }
+        ]
+        }

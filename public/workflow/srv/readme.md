@@ -1,0 +1,8 @@
+Documentation de notre serveur CRUD JSON:
+Généralités: Ce serveur fournit une API REST avec des opérations CRUD pour une collection de données stockées dans un fichier JSON. Il utilise Express.js et fonctionne sur Node.js. L'API prend en charge les méthodes GET, POST, PUT et DELETE pour manipuler les données.
+Méthodes:
+1. GET /data: Récupère toutes les données du fichier JSON et les renvoie au client sous forme de réponse JSON.
+2. POST /data: Ajoute une nouvelle donnée au fichier JSON. La donnée est envoyée dans le corps de la requête et doit avoir un attribut "id" unique. La nouvelle donnée est renvoyée dans la réponse avec le code d'état HTTP 201 (Créée).
+3. PUT /data/:id: Met à jour une donnée existante dans le fichier JSON. La donnée mise à jour est envoyée dans le corps de la requête et l'identifiant de la donnée est passé dans l'URL. La donnée mise à jour est renvoyée dans la réponse.
+4. DELETE /data/:id: Supprime une donnée existante du fichier JSON. L'identifiant de la donnée est passé dans l'URL. Si la suppression réussit, la réponse est envoyée avec le code d'état HTTP 204 (Pas de contenu).
+État de l'application: L'application est un serveur API REST simple et ne gère pas les cas d'erreurs tels que les conflits d'identifiant ou les données manquantes dans les requêtes. Assurez-vous que les données envoyées dans les requêtes sont correctes et suivent le format attendu pour éviter les erreurs.

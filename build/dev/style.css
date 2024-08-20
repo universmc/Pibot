@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.slide-container {
+    height: 100%;
+    position: relative;
+}
+p {
+    color:black;
+}
+.slide {
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.active {
+    opacity: 1;
+}
+
