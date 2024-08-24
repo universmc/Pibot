@@ -1,13 +1,6 @@
-# Définition des variables
-NODE_PATH := node_modules/.bin
-BUILD_DIR := build
-SRC_DIR := src
-DATA_DIR := data
-SRV_DIR := srv
-USER_DIR := user
-DOCS_DIR := docs
-MODELS_DIR := models
-
+# Define variables
+NODE_ENV = development
+NODE_PORT = 5144
 NODE_APP = index.js
 
 menu :
@@ -42,15 +35,9 @@ menu :
 
 MAGIC_TARGETS := codex build rep file script clean
 
+dev:
+
 all: $(MAGIC_TARGETS)
-
-srv : run start
-
-start:
-	@npm start
-run:
-	@node ./srv/srv.js
-
 
 update:
 	@echo "✨ Mise en état du dossier sur github✨"
