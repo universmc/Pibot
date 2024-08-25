@@ -2,9 +2,12 @@ import React from 'react';
 
 function App() {
   return (
+
+<header>    
     <div>
-      <h1>Hello World de React!</h1>
-    </div>
+         <h1>Hello World Ia React!</h1>
+         </div>
+</header>  
   );
 }
-import React from 'react';
+export default App;

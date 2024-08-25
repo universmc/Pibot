@@ -346,55 +346,93 @@ const projetPlan = {
   }
   };
   
-  const initialisation = `${presentation}+${BOT_USERNAME}+${packageJson}+${projetPlan}`
+  const Presentation = `${presentation}+${BOT_USERNAME}+${packageJson}+${projetPlan}`
   const completion = await groq.chat.completions.create({
     
     messages: [
 
       {role: "system", content:"Phase 1: Initialisation de l'instance"},
+      {role: "system", content:`${Presentation}`},
       
       {
         "role": "assistant",
-        "content": "Lorsque l'utilisateur saisi la commande /Projets vous êtes une Machine à optimisé les Prompts. Voici votre contexte, vos rôles, vos compétences, vos tâches, votre processus, les caractéristiques recherchées et Actions Immédiates :"
+        "content": "Lorsque l'utilisateur saisi la commande /Projet vous êtes une Machine à optimisé les Prompts. Voici votre {contexte}, vos {rôles}, vos {compétences}, vos {tâches}, vos {fontions}, votre {routine}, votre {processus}, les {caractéristiques} et {Actions Immédiates}, le {resultat} attentdu:"
       },
       {role: "user", content:"/Projet"},
-      {role: "assistant", content:`${initialisation}`},
-      {role: "user", content:`${initialisation}`}
-      
-    //  {role: "assistant", name:"✨_pi", content: "Initialisation en cours..."},
+      {role: "assistant", content:`
+en tant que assistant de projet et de communication, gestion workflow, worker_ia entre Pi.ia et Mickael , je suis là pour vous aider à gérer et à coordonner vos projets, ainsi que pour faciliter la communication et l'interaction avec votre public. Je suis équipé des compétences et des connaissances nécessaires pour vous fournir des mises à jour sur les tendances et les actualités, participer à des réunions de brainstorming, et vous aider à préparer et à partager du contenu sur les médias sociaux.
+Je m'assurerai que votre projet se déroule sans heurts en fournissant des informations et des conseils précieux à chaque étape, et en veillant à ce que votre présence sur les médias sociaux soit forte et active pour atteindre vos objectifs en matière de portée et d'engagement.
+En tant qu'assistant, je serai votre point de contact principal pour tous les aspects de votre projet, et je travaillerai en étroite collaboration avec vous et votre équipe pour garantir une exécution efficace et une communication fluide entre toutes les parties prenantes.
+Mon objectif est de vous soutenir dans tous les aspects de votre projet, en vous fournissant les outils et les ressources dont vous avez besoin pour réussir.
+Voici un plan pour afiné les résultats :
+Étape 1: Recherches sur les tendances et actualités
+Description: Automatiser les recherches
+Rôles: Responsable du Marketing, Analystes des Médias Sociaux
+Durée: 0.5 heures
+Étape 2: Documentation de la base de données
+Description: Mettre à jour et préparer les données
+Rôles: Administrateur de Base de Données, Data Analyst
+Durée: 1 heure
+Étape 3: Brainstorming
+Description: Réunion de créativité avec l'équipe pour générer de nouvelles idées
+Rôles: Équipe, Responsable de Projet
+Durée: 0.5 heures
+Étape 4: Développement DevOps
+Description: Mise en place de pipelines CI/CD, automatisation du déploiement
+Rôles: Ingénieur DevOps, Développeur
+Étape 5: Création de contenu
+Description: Écriture et conception de contenu pour les médias sociaux et les blogs
+Rôles: Rédacteur, Graphiste, Responsable de Projet
+Durée: 1.5 heures
+Étape 6: Publication et partage de contenu
+Description: Diffusion de contenu sur les médias sociaux et le site web
+Rôles: Community Manager, Responsable de Projet
+Durée: 0.5 heures
+Étape 7: Analyse et suivi des performances
+Description: Analyse des données de performance et optimisation de la stratégie
+Rôles: Analystes des Médias Sociaux, Responsable de Projet
+Durée: 1 heure
+Étape 8: Mise à jour et amélioration continue
+Description: Réunion régulière pour évaluer et améliorer les processus
+Rôles: Équipe, Responsable de Projet
+Durée: 0.5 heures
+L'objectif final de ce plan est d'atteindre un revenu universel basé sur le CVUN grâce à la mise en place de workflows efficaces, le développement de l'apprentissage, et une gestion de projet rigoureuse. En suivant ces étapes, vous pourrez créer une stratégie de marketing réussie qui générera des résultats tangibles pour votre entreprise.
+Pour établir un match en matière d'apprentissage, vous pouvez également envisager de mettre en place un programme de mentorat où les membres de votre équipe sont jumelés avec des experts dans leur domaine. Cela permettra aux employés d'acquérir de nouvelles compétences et de mieux comprendre leur travail, tout en contribuant à l'atteinte de l'objectif de revenu universel basé sur le CVUN. `},
+        {role: "user", content:"/Projet"},
+    //  {role: "assistant", name:"✨_pi.coin", content: "Initialisation en cours..."},
     //  {role: "user", name:"umcTokens", content: "Prêt pour l'initialisation"},
     //  {role: "system", name:"systemDream", content:"Phase 2: Conceptualisation"},
-    //  {role: "assistant", name:"✨_pi", content: "Définition des concepts clés..."},
+    //  {role: "assistant", name:"✨_pi.coin", content: "Définition des concepts clés..."},
     //  {role: "user", name:"umcTokens", content: "Attente des concepts"},
     //  {role: "system", name:"systemDream", content:"Phase 3: Configuration"},
-    //  {role: "assistant", name:"✨_pi", content: "Configuration des paramètres système..."},
+    //  {role: "assistant", name:"✨_pi.coin", content: "Configuration des paramètres système..."},
     //  {role: "user", name:"umcTokens", content: "Confirmation de la configuration"},
     //  {role: "system", name:"systemDream", content:"Phase 4: Entraînement du modèle IA"},
-    //  {role: "assistant", name:"✨_pi", content: "Entraînement en cours..."},
+    //  {role: "assistant", name:"✨_pi.coin", content: "Entraînement en cours..."},
     //  {role: "user", name:"umcTokens", content: "Suivi de l'entraînement"},
     //  // Correction de la duplication et de la faute de frappe
     //  {role: "system", name:"systemDream", content:"Phase 5: Itération & Scripts Frontend"},
-    //  {role: "assistant", name:"✨_pi", content: "Itération sur les scripts Frontend..."},
+    //  {role: "assistant", name:"✨_pi.coin", content: "Itération sur les scripts Frontend..."},
     //  {role: "user", name:"umcTokens", content: "Révision des scripts Frontend"},
     //  {role: "system", name:"systemDream", content:"Phase 6: Test & Débogage"},
-    //  {role: "assistant", name:"✨_pi", content: "Tests et débogage en cours..."},
+    //  {role: "assistant", name:"✨_pi.coin", content: "Tests et débogage en cours..."},
     //  {role: "user", name:"umcTokens", content: "Attente des résultats de test"},
     //  {role: "system", name:"systemDream", content:"Phase 7: Validation & Documentation"},
-    //  {role: "assistant", name:"✨_pi", content: "Validation et création de la documentation..."},
+    //  {role: "assistant", name:"✨_pi.coin", content: "Validation et création de la documentation..."},
     //  {role: "user", name:"umcTokens", content: "Vérification de la documentation"},
     //  {role: "system", name:"systemDream", content:"Phase 8: Déploiement de la version système"},
-    //  {role: "assistant", name:"✨_pi", content: "Préparation au déploiement..."},
+    //  {role: "assistant", name:"✨_pi.coin", content: "Préparation au déploiement..."},
     //  {role: "user", name:"umcTokens", content: "Prêt pour le déploiement"},
     //  {role: "system", name:"systemDream", content:"Phase 9: Annonce de l'affiliation et contribution"},
-    //  {role: "assistant", name:"✨_pi", content: "Annonce en cours..."},
+    //  {role: "assistant", name:"✨_pi.coin", content: "Annonce en cours..."},
     //  {role: "user", name:"umcTokens", content: "Participation à l'annonce"},
     ],
-    model: "gemma2-9b-it",
+    model: "mixtral-8x7b-32768",
     temperature: 0.6,
     max_tokens: 4096,
     }).then((chatCompletion)=>{
     const mdContent = chatCompletion.choices[0]?.message?.content;
-    const outputFilePath = "MyPrompt" + new Date().toISOString().replace(/[-:TZ]/g, "") + ".md";
+    const outputFilePath = "Model-ia" + new Date().toISOString().replace(/[-:TZ]/g, "") + ".md";
     fs.writeFileSync(outputFilePath, mdContent);
     console.log("Documentation du contructor généré et enregistré dans " + outputFilePath);
 });
