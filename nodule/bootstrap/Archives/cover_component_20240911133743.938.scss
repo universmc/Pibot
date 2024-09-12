@@ -1,0 +1,7 @@
+```scss
+@import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/scss/bootstrap";
+
+.cover {
+  @include cover();
+}
+```

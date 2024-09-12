@@ -1,0 +1,24 @@
+```scss
+@import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.rtl.min.css";
+
+.album-rtl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.album-rtl .col-md-4 {
+  margin-bottom: 2rem;
+}
+
+.album-rtl img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.album-rtl .card-body {
+  text-align: right;
+}
+```

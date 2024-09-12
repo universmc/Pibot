@@ -10,6 +10,100 @@ MODELS_DIR := models
 
 NODE_APP = index.js
 
+COMMANDE1_MSG="✨ initialisation du serveur Telegram ✨"
+COMMANDE2_MSG="✨ Connection Pi-Quantum ✨ "
+COMMANDE3_MSG="✨ brainstorming generation d idées ✨"
+COMMANDE4_MSG="✨ Initialisation du chatbot✨"
+COMMANDE5_MSG="✨ Initialisation du Prompt Model"
+COMMANDE6_MSG="🏗 Factory Generate Howto 📜 ✨"
+COMMANDE7_MSG="🏗 Factory Start Building composant 📦 ✨"
+COMMANDE8_MSG="🏗 Factory running Compose page 📦 ✨"
+COMMANDE9_MSG="✨ Mise à jour du repertoire sur github✨"
+COMMANDEP_MSG="✨ Serveur Pibot ✨"
+COMMANDEN_MSG="✨ Serveur neof ✨"
+COMMANDEW_MSG="✨ Serveur worker ✨"
+COMMANDEA_MSG="✨ Serveur Avatars ✨"
+COMMANDEG_MSG="✨ Serveur Gemini ✨"
+COMMANDEP_MSG="✨ Serveur GPT ✨"
+COMMANDEY_MSG="✨ Serveur Youtube ✨"
+COMMANDEO_MSG="✨ Serveur Google ✨"
+COMMANDEU_MSG="✨ Serveur User Telegram ✨"
+COMMANDE10_MSG="✨Exit session✨"
+COMMANDEa_MSG="✨Test F2✨"
+
+# Ajoutez une règle pour chaque commande
+commande1:
+	@echo "${COMMANDE1_MSG}"
+	@ssh universmc@192.168.1.33
+
+commande2:
+	@echo "${COMMANDE2_MSG}"
+	@./Pibot.sh
+
+commande3:
+	@echo "${COMMANDE3_MSG}"
+	@node .setup/did.js
+
+commande4:
+	@echo "${COMMANDE4_MSG}"
+	@node .setup/chatCompletion.js
+
+commande5:
+	@echo "${COMMANDE5_MSG}"
+	@node .setup/myprompt.js
+
+commande6:
+	@echo "${COMMANDE5_MSG}"
+	@node build/howto.js
+
+commande7:
+	@echo "${COMMANDE5_MSG}"
+	@node build/Composants.js
+
+commande8:
+	@echo "${COMMANDE5_MSG}"
+	@node src/app/composer.js
+
+commande9:
+	@echo "${COMMANDE9_MSG}"
+	@git add .
+	@git commit -m "Update"
+	@git push
+	@echo "✨ Mise à jour terminée✨"
+commande10:
+	@echo "${COMMANDE10_MSG}"
+
+
+commandeP:
+	@echo "${COMMANDEP_MSG}"
+	@node models/Pi-ia_bot.js
+
+commandeN:
+	@echo "${COMMANDEN_MSG}"
+	@node noeFs_Pibot.js
+
+
+commandeN:
+	@echo "${COMMANDEN_MSG}"
+	@node noeFs_Pibot.js
+
+commandeW:
+	@echo "${COMMANDEW_MSG}"
+	@node workspace/worker_Pibot.js
+
+commandeY:
+	@echo "${COMMANDEW_MSG}"
+	@node public/youtube_Pibot.js
+
+commandeU:
+	@echo "${COMMANDEU_MSG}"
+	@node user/user_Pibot.js
+
+
+commandeA:
+	@echo "${COMMANDEa_MSG}"
+
+
 menu :
 	@echo "Welcom To cycliq Economical system."
 	@echo""

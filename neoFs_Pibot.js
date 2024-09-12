@@ -373,7 +373,169 @@ bot.on('message', async (ctx) => {
     const google_Pibot = `https://t.me/google_Pibot/`;
     const gemini_Pibot = `https://t.me/gemini_Pibot/`;
     
-    
+    const neoFs = {
+      "Titre": "Projet NeoFS",
+      "Description": "projet NeoFS, mettant en avant son objectif, ses fonctionnalités clés, et comment il intègre le machine learning, la génération de scripts full stack, et l'IA.",
+      "Fonctionnalités": {
+        "Machine Learning": "Détails sur comment le projet utilise le machine learning, par exemple, l'intégration de TensorFlow.js pour l'entraînement de modèles dans le navigateur.",
+        "Génération de Scripts Full Stack": "Explication de la manière dont les scripts sont générés pour le développement full stack.",
+        "Optimisation avec WebDev": "Comment le projet utilise WebDev pour la prévisualisation et l'optimisation des pages web.",
+        "Intégration de l'IA": "Utilisation de GPT-3 ou Codex pour améliorer le développement et offrir des fonctionnalités avancées."
+      },
+      "Technologies Utilisées": "Listez les technologies, langages, frameworks et outils utilisés dans le projet.",
+      "Installation et Configuration": "Instructions étape par étape pour installer et configurer le projet sur un environnement local.",
+      "Utilisation": "Guide sur comment utiliser l'application, avec des exemples de commandes ou d'actions si nécessaire.",
+      "Contribution": {
+        "Informations sur comment contribuer au projet, y compris les directives de contribution et le code de conduite.": {
+          "Génération de Code": {
+            "Front-End (HTML, CSS, JS)": {
+              "Description": "NeoFS peut générer des modèles de code pour des interfaces utilisateur, en prenant en compte les meilleures pratiques de conception web et la réactivité.",
+              "Tâches": [
+                "Générer des modèles de code front-end.",
+                "Assurer la réactivité et la conformité aux meilleures pratiques."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour la génération de code front-end)",
+              "Conseil Next Step": "Passez à l'étape suivante pour la génération de code back-end."
+            },
+            "Back-End (PHP, SQL)": {
+              "Description": "Générer des scripts back-end pour la logique métier, l'accès aux bases de données, et la gestion des API.",
+              "Tâches": [
+                "Générer des scripts back-end.",
+                "Assurer la logique métier et l'accès aux bases de données."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour la génération de code back-end)",
+              "Conseil Next Step": "Passez à l'étape suivante pour l'analyse de code."
+            }
+          },
+          "Analyse de Code": {
+            "Détection d'Erreurs et de Bugs": {
+              "Tâches": [
+                "Analyser le code pour identifier les erreurs syntaxiques ou logiques.",
+                "Rapporter les erreurs détectées."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour la détection d'erreurs)",
+              "Conseil Next Step": "Passez à l'étape suivante pour la suggestion et la correction de code."
+            },
+            "Optimisation de Code": {
+              "Tâches": [
+                "Suggérer des améliorations pour l'efficacité, la lisibilité, et la performance du code.",
+                "Rapporter les suggestions d'optimisation."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour l'optimisation de code)",
+              "Conseil Next Step": "Passez à l'étape suivante pour la compilation des composants web full stack."
+            }
+          },
+          "Suggestion et Correction de Code": {
+            "Améliorations Automatiques": {
+              "Tâches": [
+                "Proposer des corrections automatiques pour les erreurs courantes.",
+                "Appliquer des améliorations automatiques."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour les améliorations automatiques)",
+              "Conseil Next Step": "Passez à l'étape suivante pour la compilation des composants web full stack."
+            },
+            "Suggestions Basées sur les Tendances": {
+              "Tâches": [
+                "Offrir des suggestions basées sur les dernières tendances et meilleures pratiques en développement web.",
+                "Rapporter les suggestions basées sur les tendances."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour les suggestions basées sur les tendances)",
+              "Conseil Next Step": "Passez à l'étape suivante pour la compilation des composants web full stack."
+            }
+          },
+          "Compilation des Composants Web Full Stack": {
+            "Intégration Front-End et Back-End": {
+              "Tâches": [
+                "Compiler des applications complètes en intégrant à la fois le front-end et le back-end.",
+                "Assurer la compatibilité entre les composants."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour la compilation des composants web full stack)",
+              "Conseil Next Step": "Passez à l'étape suivante pour le développement et l'implémentation."
+            },
+            "Prévisualisation en Temps Réel": {
+              "Tâches": [
+                "Offrir une fonctionnalité de prévisualisation pour voir le rendu du code généré.",
+                "Assurer la réactivité de la prévisualisation."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour la prévisualisation en temps réel)",
+              "Conseil Next Step": "Passez à l'étape suivante pour le développement et l'implémentation."
+            }
+          },
+          "Développement et Implémentation": {
+            "Utilisation de l'IA et du Machine Learning": {
+              "Tâches": [
+                "Utiliser des modèles d'apprentissage automatique pour améliorer la génération et l'analyse de code.",
+                "Assurer l'intégration fluide de l'IA dans le processus de développement."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour l'utilisation de l'IA et du Machine Learning)",
+              "Conseil Next Step": "Passez à l'étape suivante pour l'intégration avec les outils existants."
+            },
+            "Interface Utilisateur Intuitive": {
+              "Tâches": [
+                "Développer une interface utilisateur qui permet aux développeurs d'interagir facilement avec NeoFS, par exemple, via une interface graphique ou une ligne de commande.",
+                "Assurer la convivialité de l'interface."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour le développement de l'interface utilisateur)",
+              "Conseil Next Step": "Passez à l'étape suivante pour l'intégration avec les outils existants."
+            }
+          },
+          "Intégration avec les Outils Existant": {
+            "Compatibilité avec les IDEs": {
+              "Tâches": [
+                "Assurer la compatibilité avec les environnements de développement intégrés populaires.",
+                "Développer des extensions pour les IDEs."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour la compatibilité avec les IDEs)",
+              "Conseil Next Step": "Passez à l'étape suivante pour la sécurité et la confidentialité."
+            },
+            "Plugins et Extensions": {
+              "Tâches": [
+                "Offrir des plugins pour intégrer NeoFS dans des outils existants.",
+                "Assurer la compatibilité avec diverses extensions."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour les plugins et les extensions)",
+              "Conseil Next Step": "Passez à l'étape suivante pour la sécurité et la confidentialité."
+            }
+          },
+          "Sécurité et Confidentialité": {
+            "Protection des Données": {
+              "Tâches": [
+                "Assurer la sécurité des données de code traitées par NeoFS.",
+                "Mettre en place des mesures de protection des données."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour la protection des données)",
+              "Conseil Next Step": "Passez à l'étape suivante pour le feedback et l'amélioration continue."
+            },
+            "Respect des Normes de Confidentialité": {
+              "Tâches": [
+                "Se conformer aux normes de confidentialité et de sécurité des données.",
+                "Effectuer des audits de sécurité réguliers."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour le respect des normes de confidentialité)",
+              "Conseil Next Step": "Passez à l'étape suivante pour le feedback et l'amélioration continue."
+            }
+          },
+          "Feedback et Amélioration Continue": {
+            "Retours Utilisateurs": {
+              "Tâches": [
+                "Mettre en place un système pour recueillir les retours des utilisateurs et les intégrer dans les mises à jour de NeoFS.",
+                "Analyser les retours et prioriser les améliorations."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour la collecte de retours utilisateurs)",
+              "Conseil Next Step": "Passez à l'étape suivante pour les mises à jour régulières."
+            },
+            "Mises à Jour Régulières": {
+              "Tâches": [
+                "Fournir des mises à jour régulières pour améliorer les fonctionnalités et corriger les bugs.",
+                "Communiquer efficacement sur les nouvelles versions."
+              ],
+              "Prompt": "$prompt=(instructions spécifiques pour les mises à jour régulières)",
+              "Conseil Next Step": "Félicitations pour avoir terminé avec succès votre projet NeoFS !"
+            }
+          }
+        }
+      }
+    }
 
     const knowleddge = `${racine}+${cdnJs}+${node}+${make}+${archiviste}+${github}+${dchub_public}+${user_Pibot}+${youtube_Pibot}+${google_Pibot}+${gemini_Pibot}+${packageJson}+${BOT_USERNAME} `
     const userInput = ctx.message.text;
@@ -382,6 +544,7 @@ bot.on('message', async (ctx) => {
         const chatCompletion = await groq.chat.completions.create({
             messages: [
                 {role: 'system',content:knowleddge},
+                {role: 'system',content:`${neoFs}`},
                 {
                   role: 'system',
                   content: "Tu es l'intelligence artificielle '🕴'nomée @neoFs_Pibot illustré par cette emoji '🕴' au cœur de ce salon  des utilisateurs du web sur mon Telegram `https://t.me/+U-kj4RZ-PCFhNDJk` avec l'IA @Avatars_Pibot gemma2-9b-it et @worker_Pibot et @Gigatron_Pibot notre Qubit ou Pixel de référence , Tu es social dynamique optimiste maîtrise des approches métaphysique des techniques d'apprentissage automatique avec les model IA prés entrainnée gemma2-9b-it ou dall-e-3 ou encore mixtral-8x7b-32768 le text-embedding-ada-002 gpt codex d'openAI ... les methodes d'archivage sur https:archive.org sur versionning sur https://github.com/ avec un BotNet @user_Pibot. Nous allons créer des invitations pour notre salon sur les réseaux sociaux avec botFather @youTube_Pibot, @google_Pibot, @Gemini_Pibot) et les liens vers mon chatRooms/hub/salon : dchub_public(t.me/dchub_01)) dchub_privé(t.me/dchub_Pibot) app-Telegram https://univers-mc.cloud/Telegram/ invite : https://t.me/user_Pibot/invite dont j'en suis l'administrateur. 2. Les clés pour construire un réseau efficace sur Web : vous pouvez donner des conseils sur comment créer des connections solides, comment être actif dans ses groupes, et comment développer des relations professionnelles."
