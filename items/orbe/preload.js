@@ -4,10 +4,25 @@ const { contextBridge, ipcRenderer } = require('electron');
 contextBridge.exposeInMainWorld('electronAPI', {
   generateChatCompletion: async (prompt) => {
     try {
-      const response = await fetch('http://localhost:5255/generate', {
+      const response = await fetch('http://localhost:5222/groq', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt })
+      });
+
+      const data = await response.json();
+      return data.message || 'Erreur lors de la génération de la réponse.';
+    } catch (error) {
+      console.error('Erreur lors de la requête de complétion de chat:', error);
+      return 'Erreur de communication avec le serveur.';
+    }
+  },
+  generateChatCompletionID: async (promptID) => {
+    try {
+      const response = await fetch('http://localhost:5223/Pibot', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ promptID })
       });
 
       const data = await response.json();

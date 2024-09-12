@@ -1,20 +1,18 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
-// Initialise l'application
-app.on('ready', () => {
-  // Crée une nouvelle fenêtre
-const mainWindow = new BrowserWindow({
+function createWindow() {
+  const win = new BrowserWindow({
     width: 987,
     height: 610,
     webPreferences: {
-      nodeIntegration: false,
-      enableRemoteModule: false,
+      preload: path.join(__dirname, 'preload.js'), // Assurez-vous que le chemin est correct
       contextIsolation: true,
-      sandbox: true
-}
+      enableRemoteModule: false,
+    },
   });
 
-  // Charge un fichier HTML
-mainWindow.loadFile(path.join(__dirname, 'index.html'));
-});
+  win.loadFile('index.html');
+}
+
+app.whenReady().then(createWindow);

@@ -55,7 +55,7 @@ server.post('/Pibot', async (req, res) => {
 
 // Lancer le serveur Express
 server.listen(3011, () => {
-  console.log('Serveur Express démarré sur http://localhost:3011');
+  console.log('Serveur Express démarré sur http://localhost:5255');
 });
 
 function createWindow() {

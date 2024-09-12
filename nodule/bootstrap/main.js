@@ -16,7 +16,10 @@ server.post('/generate', async (req, res) => {
   try {
     const response = await groq.chat.completions.create({
       model: 'gemma2-9b-it', // Utilisez le modèle correct disponible
-      messages: [{ role: 'user', content: prompt }],
+      messages: [
+        { role: 'system', content: "html:5 +bootstrap5" },
+        { role: 'user', content: prompt }
+      ],
     });
 
     const message = response.choices[0].message.content;
@@ -28,8 +31,8 @@ server.post('/generate', async (req, res) => {
 });
 
 // Lancer le serveur Express
-server.listen(3000, () => {
-  console.log('Serveur Express démarré sur http://localhost:3000');
+server.listen(5255, () => {
+  console.log('Serveur Express démarré sur http://localhost:5255');
 });
 
 function createWindow() {
