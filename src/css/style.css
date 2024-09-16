@@ -24,7 +24,7 @@ header {
   display: flex;
   flex-direction: column;
   min-width: 50px;
-  background-color: #090012;
+  background-color: rgb(16, 22, 32);
   text-align: center;
 }
 
@@ -114,7 +114,7 @@ footer {
   display: flex;
   min-height: 7vh;
   justify-content:end;
-  background-color: #515151;
+  background-color: rgb(16, 22, 32);
   text-align: center;
   padding: 10px 0;
   bottom: 0;
