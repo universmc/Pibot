@@ -1,4 +1,8 @@
 ## Présentation 🎬 du drone 🛸 "Orbe -IA" 🤖 
+
+
+@dev_pibot (https://t.me/dev_pibot)
+
 🛸 Fonctionnant avec BotNet Pibot sur Telegram Le drone 🛸 "Orbe -IA" est un système d'imagerie sphérique intelligente conçu pour capturer, analyser et interpréter des images et vidéos à 360 degrés en temps réel dans un environnement numérique. Son nom "Orbe" fait référence à la forme sphérique de la caméra, tandis que le suffixe "-IA" met en évidence son utilisation de l'intelligence artificielle pour analyser et classifier les objets détectés.
 
 🖲 Métadonnées :

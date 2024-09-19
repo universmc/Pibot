@@ -1,7 +1,8 @@
 const { Telegraf } = require('telegraf');
 const Groq = require('groq-sdk');
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
-
+const axios = require('axios');
+const emoji = require('node-emoji')
 
 const bot = new Telegraf('7281441282:AAGyNED_kriYM-JQReZEToae-OSQcMK0C6M', {
   telegram: {
@@ -21,7 +22,7 @@ async function main(subject) {
     const completion = await groq.chat.completions.create({
       model: "gemma2-9b-it",
       messages: [
-          { role: "assistant", content: `Génération d'un guide Le rôle de développeur chez OpenAI` },
+          { role: "assistant", content: `Génération d'un guide Le rôle de développeur de PI une IA de Haut Potentiel` },
         { role: "user", content: `Génération d'un guide sur ${subject}` },
         { role: "system", content: `bienvenue sur Telegram` }
       ],
@@ -46,8 +47,6 @@ bot.command('generate', async (ctx) => {
   const result = await main(subject);
   ctx.reply(result);
 });
-
-
 
 
 

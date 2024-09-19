@@ -51,11 +51,11 @@ function createWindow() {
     },
   });
 
-  win.loadFile('index.php');
+  win.loadFile('index.html');
 }
 
 app.whenReady().then(createWindow);
-win.loadURL('http://localhost:3033');
+
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();
 });

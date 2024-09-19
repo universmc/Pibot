@@ -54,8 +54,8 @@ server.post('/Pibot', async (req, res) => {
 });
 
 // Lancer le serveur Express
-server.listen(3011, () => {
-  console.log('Serveur Express démarré sur http://localhost:3011');
+server.listen(3134, () => {
+  console.log('Serveur Express démarré sur http://localhost:3134');
 });
 
 function createWindow() {
@@ -68,8 +68,7 @@ function createWindow() {
       enableRemoteModule: false,
     },
   });
-
-  win.loadFile('index.html');
+  win.loadURL('http://localhost:3134');
 }
 
 app.whenReady().then(createWindow);

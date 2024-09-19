@@ -22,7 +22,7 @@ menu() {
     echo "  ║                                                                           ║";
     echo "  ║                                                                           ║";
     echo "  ║            [1] - Star serveur                                             ║";
-    echo "  ║            [2] - _Pibot_                                              ║";
+    echo "  ║            [2] - _Pibot_                                                  ║";
     echo "  ║            [3] - Brainstroming                                            ║";
     echo "  ║            [4] - Chatbot                                                  ║";
     echo "  ║            [5] - MyPrompt                                                 ║";

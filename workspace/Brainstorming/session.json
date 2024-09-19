@@ -1,0 +1,41 @@
+{
+    "session_name": "session_1",
+    "timestamp_start": "1763228800000",
+    "timestamp_end": "1763241600000",
+    "duration": "4 hours",
+    "participants": [
+    {
+    "name": "Mickael",
+    "role": "User"
+    },
+    {
+    "name": "Pi",
+    "role": "AI Assistant"
+    }
+    ],
+    "discussion_topics": [
+    {
+    "topic": "Project progress review",
+    "duration": "30 minutes"
+    },
+    {
+    "topic": "New ideas and concepts",
+    "duration": "60 minutes"
+    },
+    {
+    "topic": "Feedback and improvements",
+    "duration": "30 minutes"
+    }
+    ],
+    "goals": [
+    "Evaluate project progress",
+    "Discuss new ideas and concepts",
+    "Gather feedback and identify areas for improvement"
+    ],
+    "next_steps": [
+    "Implement improvements",
+    "Continue working on new ideas",
+    "Schedule next session"
+    ]
+    }
+    
